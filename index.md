@@ -35,28 +35,7 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 
 
 {% comment %}
-8< ============= For a workshop delete from here =============
-For a workshop please delete the following block until the next dashed-line
-{% endcomment %}
 
-
-<div class="alert alert-danger">
-This is the workshop template. Delete these lines and use it to
-<a href="https://carpentries.github.io/workshop-template/customization/index.html">customize</a>
-your own website. If you are running a self-organized workshop or have not put
-in a workshop request yet, please also fill in
-<a href="{{site.amy_site}}/forms/self-organised/">this workshop request form</a>
-to let us know about your workshop and our administrator may contact you if we
-need any extra information.
-If this is a pilot workshop for a new lesson,
-set the `pilot` field to `true` in `_config.yml`.
-For workshops teaching a lesson in The Carpentries Incubator,
-remember to uncomment the `incubator_lesson_site`, `incubator_pre_survey`, and `incubator_post_survey`
-fields in `_config.yml`
-</div>
-
-{% comment %}
-8< ============================= until here ==================
 {% endcomment %}
 
 {% comment %}
@@ -212,16 +191,18 @@ SPECIAL REQUIREMENTS
 
 Modify the block below if there are any special requirements.
 {% endcomment %}
-<p id="requirements">
+<"<p id=""requirements"">
   <strong>Requirements:</strong>
-  {% if online == "false" %}
-    Participants must bring a laptop with a
+  {% if online == ""false"" %}
+    PCs and an online environment will be provided but participants are welcome to bring their own laptop with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   {% else %}
     Participants must have access to a computer with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  In in order to continue working after the course, they should have a few specific software packages installed (listed <a href=""#setup"">below</a>). 
+  <br>
+  Note for members of Newcastle University: Software should be installed from Software Center on Newcastle University managed Windows PCs and laptops. In case of difficulty please log a ticket to it.servicedesk@ncl.ac.uk and let us know at the contact details below if you still need help.
 </p>
 
 {% comment %}
@@ -230,27 +211,18 @@ ACCESSIBILITY
 Modify the block below if there are any barriers to accessibility or
 special instructions.
 {% endcomment %}
-<p id="accessibility">
-  <strong>Accessibility:</strong>
-  We are committed to making this workshop
-  accessible to everybody. 
-{% if online == "false" %}
-  The workshop organizers have checked that:
+
 <p>
-  <ul>
-    <li>The room is wheelchair / scooter accessible.</li>
-    <li>Accessible restrooms are available.</li>
-  </ul>
+<strong>Accessibility:</strong>
+  {% if online == ""false"" %} We are committed to making this workshop accessible to everybody. For workshops at a physical location, the workshop organizers have checked that:
+
+The room is wheelchair / scooter accessible.
+Accessible restrooms are available.
+Materials will be provided in advance of the workshop and large-print handouts are available if needed by notifying the organizers in advance. If we can help making learning easier for you (e.g. sign-language interpreters, lactation facilities) please get in touch (using contact details below) and we will attempt to provide them.
+
+{% else %} We are dedicated to providing a positive and accessible learning environment for all. Please notify the instructors in advance of the workshop if you require any accommodations or if there is anything we can do to make this workshop more accessible to you.
 {% endif %}
-</p>
-<p>We are dedicated to providing a positive and accessible learning environment for all. 
-  We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
-  However, we do want to help create an inclusive, accessible experience for all participants. 
-  We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
-  To request an accommodation for this workshop, please fill out the 
-  <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
-  If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
-</p>
+</p>"
 <p>
   <a href="https://glosario.carpentries.org/">Glosario</a> is a multilingual glossary 
   for computing and data science terms. The glossary helps 
